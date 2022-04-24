@@ -8,8 +8,8 @@
     
     <meta name="description" content="COC7th 規則筆記">
     
-    <link rel="preload" href="/COC7th/assets/css/0.styles.1f1bcfec.css" as="style"><link rel="preload" href="/COC7th/assets/js/app.7c68b9f5.js" as="script"><link rel="preload" href="/COC7th/assets/js/2.a64b9641.js" as="script"><link rel="preload" href="/COC7th/assets/js/9.f25a1760.js" as="script"><link rel="prefetch" href="/COC7th/assets/js/3.1efbc599.js"><link rel="prefetch" href="/COC7th/assets/js/4.5d88ba0f.js"><link rel="prefetch" href="/COC7th/assets/js/5.f1575596.js"><link rel="prefetch" href="/COC7th/assets/js/6.fa99547e.js"><link rel="prefetch" href="/COC7th/assets/js/7.b179bc74.js"><link rel="prefetch" href="/COC7th/assets/js/8.16ac778d.js">
-    <link rel="stylesheet" href="/COC7th/assets/css/0.styles.1f1bcfec.css">
+    <link rel="preload" href="/COC7th/assets/css/0.styles.9f0b5d36.css" as="style"><link rel="preload" href="/COC7th/assets/js/app.83e49846.js" as="script"><link rel="preload" href="/COC7th/assets/js/2.8fd5298b.js" as="script"><link rel="preload" href="/COC7th/assets/js/6.1b9c661c.js" as="script"><link rel="prefetch" href="/COC7th/assets/js/3.0b421a33.js"><link rel="prefetch" href="/COC7th/assets/js/4.afe6b4ea.js"><link rel="prefetch" href="/COC7th/assets/js/5.dd616d39.js"><link rel="prefetch" href="/COC7th/assets/js/7.768bf869.js"><link rel="prefetch" href="/COC7th/assets/js/8.e1b6f7c5.js"><link rel="prefetch" href="/COC7th/assets/js/9.25797c36.js">
+    <link rel="stylesheet" href="/COC7th/assets/css/0.styles.9f0b5d36.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/COC7th/" class="home-link router-link-active"><!----> <span class="site-name">COC7版規則 廚房筆記</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/COC7th/" class="nav-link">
@@ -27,7 +27,40 @@
 教育代表調查員掌握的正規知識，一般來說也代表調查員在一般的學習體制中的學歷。教育表示的是調查員知識含量，而非應變能力(那是智力的範疇)。教育為0的角色估計是新生兒或者失憶過(沒有關於世界的常識)，會顯得十分好奇或容易受騙。教育決定初始職業點數，並直接決定初始母語技能。在進行知識檢定時也會使用到。</p> <details class="custom-block details"><summary>教育參考</summary> <p>60 - 高中教育<br>
 70 - 大學教育<br>
 80以上 - 大學教育裡名列前茅並且拿到了學位<br>
-不過高教育也不一定代表接受過傳統學校教育，可以是自學的鬼才。</p></details></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
-    <script src="/COC7th/assets/js/app.7c68b9f5.js" defer></script><script src="/COC7th/assets/js/2.a64b9641.js" defer></script><script src="/COC7th/assets/js/9.f25a1760.js" defer></script>
+不過高教育也不一定代表接受過傳統學校教育，可以是自學的鬼才。</p></details></li></ul> <h3 id="快速建立小工具"><a href="#快速建立小工具" class="header-anchor">#</a> 快速建立小工具</h3> <p>下面提供一個網頁應用功能讓你快速骰出數值。</p> <div class="container"><form name="bg" class="base_generate"><div><input type="button" value="Roll" name="b" onclick="
+        var d1 = Math.floor(Math.random()*6)+1;
+        var d2 = Math.floor(Math.random()*6)+1;
+        var d3 = Math.floor(Math.random()*6)+1;
+        document.getElementById('str').textContent=`力量(ＳＴＲ): ${(d1+d2+d3)*5} ➝ [${d1} + ${d2} + ${d3}] * 5`;
+        var d1 = Math.floor(Math.random()*6)+1;
+        var d2 = Math.floor(Math.random()*6)+1;
+        var d3 = Math.floor(Math.random()*6)+1;
+        document.getElementById('con').textContent=`體質(ＣＯＮ): ${(d1+d2+d3)*5} ➝ [${d1} + ${d2} + ${d3}] * 5`;
+        var d1 = Math.floor(Math.random()*6)+1;
+        var d2 = Math.floor(Math.random()*6)+1;
+        var d3 = 6;
+        document.getElementById('siz').textContent=`體型(ＳＩＺ): ${(d1+d2+d3)*5} ➝ ([${d1} + ${d2}] + ${d3}) * 5`;
+        var d1 = Math.floor(Math.random()*6)+1;
+        var d2 = Math.floor(Math.random()*6)+1;
+        var d3 = Math.floor(Math.random()*6)+1;
+        document.getElementById('dex').textContent=`敏捷(ＤＥＸ): ${(d1+d2+d3)*5} ➝ [${d1} + ${d2} + ${d3}] * 5`;
+        var d1 = Math.floor(Math.random()*6)+1;
+        var d2 = Math.floor(Math.random()*6)+1;
+        var d3 = Math.floor(Math.random()*6)+1;
+        document.getElementById('app_').textContent=`外貌(ＡＰＰ): ${(d1+d2+d3)*5} ➝ [${d1} + ${d2} + ${d3}] * 5`;
+        var d1 = Math.floor(Math.random()*6)+1;
+        var d2 = Math.floor(Math.random()*6)+1;
+        var d3 = Math.floor(Math.random()*6)+1;
+        document.getElementById('int').textContent=`智力(ＩＮＴ): ${(d1+d2+d3)*5} ➝ ([${d1} + ${d2}] + ${d3}) * 5`;
+        var d1 = Math.floor(Math.random()*6)+1;
+        var d2 = Math.floor(Math.random()*6)+1;
+        var d3 = Math.floor(Math.random()*6)+1;
+        document.getElementById('pow').textContent=`意志(ＰＯＷ): ${(d1+d2+d3)*5} ➝ [${d1} + ${d2} + ${d3}] * 5`;
+        var d1 = Math.floor(Math.random()*6)+1;
+        var d2 = Math.floor(Math.random()*6)+1;
+        var d3 = Math.floor(Math.random()*6)+1;
+        document.getElementById('edu').textContent=`教育(ＥＤＵ): ${(d1+d2+d3)*5} ➝ ([${d1} + ${d2}] + ${d3}) * 5`;
+        " class="generate_btn"></div> <p id="str" class="title">力量(ＳＴＲ):</p> <p id="con" class="title">體質(ＣＯＮ):</p> <p id="siz" class="title">體型(ＳＩＺ):</p> <p id="dex" class="title">敏捷(ＤＥＸ):</p> <p id="app_" class="title">外貌(ＡＰＰ):</p> <p id="int" class="title">智力(ＩＮＴ):</p> <p id="pow" class="title">意志(ＰＯＷ):</p> <p id="edu" class="title">教育(ＥＤＵ):</p></form></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/COC7th/assets/js/app.83e49846.js" defer></script><script src="/COC7th/assets/js/2.8fd5298b.js" defer></script><script src="/COC7th/assets/js/6.1b9c661c.js" defer></script>
   </body>
 </html>
