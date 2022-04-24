@@ -47,7 +47,8 @@ module.exports = {
 
             // fallback
             '/': [
-              '/intro',        /* / */
+              '/intro',
+              '/建立調查員',
             ]
           },
 
